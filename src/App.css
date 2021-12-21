@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(223, 184, 197);
+}
+h1 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+  font-size: 40px;
+  margin-top: 5px;
+}
+#mongo {
+  color: green;
+}
+#react {
+  color: skyblue;
+}
+#add {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#read {
+  color: blue;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#borrar {
+  color: red;
+}
+.inputs {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs input {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  border-color: violet;
+}
+.inputs button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: palevioletred;
+  color: white;
+  font-size: large;
+}
+button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: violet;
+}
+.listOfFriends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.friendContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.friend {
+  width: 300px;
+  height: 50px;
+  background-color: violet;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+  display: flex;
+  border-radius: 5px;
+}
+.friend h3 {
+  margin-left: 15px;
+}
+#edad {
+  margin-left: 35px;
+}
+.friendContainer button {
+  width: 70px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+#deleteBtn {
+  background-color: red;
+  color: white;
+}
+#deleteBtn:hover {
+  background-color: white;
+  color: red;
+}
+#update {
+  background-color: blue;
+  color: white;
+}
+#update:hover {
+  background-color: white;
+  color: blue;
 }
